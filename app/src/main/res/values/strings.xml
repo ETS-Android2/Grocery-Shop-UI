@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Grocery Store</string>
+
+    <string name="welcome_nback">WELCOME\nBACK!</string>
+    <string name="login">LOGIN</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="password">Password*</string>
+    <string name="email">Email*</string>
+    <string name="please_login_to_continue">Please Login to Continue</string>
+    <string name="don_t_have_account">Don\'t Have Account?</string>
+    <string name="submit">SUBMIT</string>
+    <string name="accept_t_amp_c"><![CDATA[Accept T & C]]></string>
+    <string name="please_sign_up_to_continue">Please Sign up to continue</string>
+    <string name="user_name">Full Name*</string>
+
+
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="my_cart">My Cart</string>
+    <string name="my_orders">My Orders</string>
+    <string name="favorite">Favorite</string>
+    <string name="chats">Chats</string>
+    <string name="profile">Profile</string>
+    <string name="about_us">About Us</string>
+    <string name="logout">Logout</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="category">Category</string>
+    <string name="fresh_products">Fresh Products</string>
+    <string name="view_more">View More</string>
+    <string name="vegetable">Vegetable</string>
+    <string name="pay">PAY</string>
+    <string name="cart_summary">Cart Summary</string>
+    <string name="discount">Discount</string>
+    <string name="delivery_charge">Delivery Charge</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="remove">Remove</string>
+    <string name="add_note">Add Note</string>
+    <string name="buy">BUY</string>
+    <string name="add_cart">Add Cart</string>
+    <string name="order_now">Order Now</string>
+    <string name="contact_information">Contact Information</string>
+    <string name="full_name">Full Name*</string>
+    <string name="mobile_number">Mobile Number*</string>
+    <string name="add_new_address">Add New Address</string>
+</resources>

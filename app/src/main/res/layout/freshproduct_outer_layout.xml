@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_category"
+        android:textSize="20sp"
+        android:textColor="@color/colorGreenDark"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fresh_products"
+            android:paddingTop="10dp"
+            android:textColor="@color/colorGreenDark"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingBottom="10dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/view_more"
+            android:gravity="end|center_horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColor="@color/colorGreenDark"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_category"
+        android:id="@+id/fresh_product_recycleview"/>
+</RelativeLayout>
