@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:padding="10dp"
                 android:text="C-123, Golgappa gali, near atma nager new delhi, Delhi India 110070"
-                android:textSize="18sp" />
+                android:textSize="16sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"

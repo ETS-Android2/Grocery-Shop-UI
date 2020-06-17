@@ -54,26 +54,26 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:textColor="@color/colorGray"
-                        android:textSize="16sp"
+                        android:textSize="14sp"
                         android:text="@string/full_name"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/colorGreenDark"
-                        android:textSize="20sp"
+                        android:textSize="18sp"
                         android:text="Pankaj Sharma"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:textColor="@color/colorGray"
-                        android:textSize="16sp"
+                        android:textSize="14sp"
                         android:text="@string/mobile_number"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/colorGreenDark"
-                        android:textSize="20sp"
+                        android:textSize="18sp"
                         android:text="+91 9900990099"/>
                 </LinearLayout>
             </RelativeLayout>
@@ -87,7 +87,7 @@
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:paddingTop="16dp"
-            android:textSize="23sp"/>
+            android:textSize="20sp"/>
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -102,12 +102,42 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Choose time slot"
+            android:text="Choose week slot"
             android:textColor="@color/colorGreenDark"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:paddingTop="16dp"
-            android:textSize="23sp"/>
+            android:textSize="20sp"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentPadding="8dp"
+            android:layout_margin="10dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="vertical">
+                <com.dpro.widgets.WeekdaysPicker
+                    android:id="@+id/weekdays"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    app:sunday_first_day="true"
+                    app:text_color="@color/colorWhite"
+                    app:text_unselected_color="@color/colorPrimary"
+                    app:highlight_color="@color/colorPrimary"
+                    app:background_color="#0D000000"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delivery time slot"
+            android:textColor="@color/colorGreenDark"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="16dp"
+            android:textSize="20sp"/>
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -116,9 +146,26 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:orientation="vertical">
+                <TimePicker
+                    android:id="@+id/simpleTimePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:timePickerMode="spinner"/>
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/pay_mb"
+            android:text="@string/pay"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:cornerRadius="4dp"/>
     </LinearLayout>
 
 </ScrollView>
