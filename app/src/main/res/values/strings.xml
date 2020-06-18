@@ -59,4 +59,8 @@
     <string name="district">District*</string>
     <string name="state">State*</string>
     <string name="add_address">Add Address</string>
+    <string name="reorder">Reorder</string>
+    <string name="rate">Rate</string>
+    <string name="no_of_item">No. Of Item</string>
+    <string name="order_summery">Order Summery</string>
 </resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:paddingTop="8dp"
+            android:id="@+id/layout">
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/vegetable"
+                android:id="@+id/image"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingStart="10dp"
+                android:paddingEnd="0dp"
+                android:layout_toEndOf="@id/image">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorGreenDark"
+                    android:textStyle="bold"
+                    android:padding="4dp"
+                    android:text="Product Name"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:padding="4dp"
+                    android:text="Product\nDescription"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorGreenDark"
+                    android:text="1 kg"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/delivery_status"
+                        android:src="@drawable/ic_check_circle_24"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/delivery_status"
+                        android:paddingEnd="4dp"
+                        android:paddingStart="8dp"
+                        android:paddingTop="4dp"
+                        android:textColor="@color/colorGreenDark"
+                        android:text="Delivered on 20/07/2020 at 08:30 AM"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout"
+            android:paddingStart="8dp"
+            android:paddingBottom="8dp"
+            android:paddingEnd="8dp">
+            <Button
+                android:id="@+id/reorder"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/reorder"
+                android:layout_weight="1"
+                android:textColor="@color/colorWhite"
+                android:layout_marginEnd="8dp"
+                style="@style/Widget.MaterialComponents.Button" />
+
+            <Button
+                android:id="@+id/rate"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/rate"
+                android:layout_weight="1"
+                android:textColor="@color/colorWhite"
+                android:layout_marginStart="8dp"
+                style="@style/Widget.MaterialComponents.Button" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
