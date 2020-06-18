@@ -238,7 +238,7 @@ public class HomeControllerAdapter extends RecyclerView.Adapter<RecyclerView.Vie
 
     @Override
     public int getItemCount() {
-        return list == null ? 0 : list.size();
+        return 4;
     }
 }
 

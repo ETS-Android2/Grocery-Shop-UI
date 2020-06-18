@@ -10,6 +10,7 @@ import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.annotation.NonNull;
+import androidx.lifecycle.ViewModelProviders;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -21,12 +22,16 @@ import androidx.appcompat.widget.Toolbar;
 import java.util.Objects;
 
 import sharma.pankaj.grocerystore.R;
+import sharma.pankaj.grocerystore.ui.mycart.CartEntryModel;
+import sharma.pankaj.grocerystore.ui.myorders.SlideshowViewModel;
 
 public class HomeActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     NavController navController;
     DrawerLayout drawer;
+    private CartEntryModel cartEntryModel;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,6 +56,8 @@ public class HomeActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
         navigationView.setItemIconTintList(null);
+
+        cartEntryModel = ViewModelProviders.of(this).get(CartEntryModel.class);
     }
 
     @Override

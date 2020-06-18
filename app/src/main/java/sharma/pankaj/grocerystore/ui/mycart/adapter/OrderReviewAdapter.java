@@ -5,21 +5,27 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.fragment.app.FragmentActivity;
 import androidx.navigation.NavController;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
 
 import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import sharma.pankaj.grocerystore.R;
+import sharma.pankaj.grocerystore.ui.address.AddressFragment;
 import sharma.pankaj.grocerystore.ui.home.model.FreshProductModel;
 import sharma.pankaj.grocerystore.ui.mycart.model.AddressModel;
 
@@ -30,6 +36,7 @@ public class OrderReviewAdapter extends RecyclerView.Adapter<OrderReviewAdapter.
     LayoutInflater inflater;
     NavController navController;
     int selection = 0;
+    private static final String TAG = "OrderReviewAdapter";
 
     public OrderReviewAdapter(Context context, List<AddressModel> list, NavController navController) {
         this.context = context;
@@ -58,6 +65,9 @@ public class OrderReviewAdapter extends RecyclerView.Adapter<OrderReviewAdapter.
                 selection = position;
                 notifyDataSetChanged();
         });
+        holder.add_address.setOnClickListener(v -> {
+            showBottomSheet();
+        });
     }
 
     @Override
@@ -72,12 +82,23 @@ public class OrderReviewAdapter extends RecyclerView.Adapter<OrderReviewAdapter.
         @BindView(R.id.add_address_layout)
         LinearLayout add_address_layout;
 
+        @BindView(R.id.add_address)
+        TextView add_address;
+
         @BindView(R.id.select_address)
         RadioButton select_address;
+
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             ButterKnife.bind(this, itemView);
         }
     }
+    public void showBottomSheet() {
+        AddressFragment addressFragment =
+                AddressFragment.newInstance();
+        addressFragment.show(((FragmentActivity) context).getSupportFragmentManager(),
+                TAG);
+    }
+
 }

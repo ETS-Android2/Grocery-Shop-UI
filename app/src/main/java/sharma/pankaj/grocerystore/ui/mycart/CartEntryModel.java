@@ -4,16 +4,15 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class MyCartViewcheckModel extends ViewModel {
+public class CartEntryModel extends ViewModel {
 
-    private MutableLiveData<String> mText;
+    private MutableLiveData<Integer> mText;
 
-    public MyCartViewcheckModel() {
+    public CartEntryModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is mycart fragment");
     }
 
-    public LiveData<String> getText() {
+    public LiveData<Integer> getText() {
         return mText;
     }
 }

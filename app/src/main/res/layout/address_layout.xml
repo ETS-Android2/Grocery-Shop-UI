@@ -82,12 +82,15 @@
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="10dp"
         android:visibility="gone"
+        android:clickable="true"
+        android:focusable="true"
         android:background="@drawable/incre_dcre_bg"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/add_address"
             android:background="?attr/selectableItemBackground"
             android:clickable="true"
             android:focusable="true"
