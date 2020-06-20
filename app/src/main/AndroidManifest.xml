@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.HomeActivity"
+            android:name=".HomeActivity"
             android:label="@string/title_activity_home"
             android:launchMode="singleTask"
             android:windowSoftInputMode="stateHidden"/>

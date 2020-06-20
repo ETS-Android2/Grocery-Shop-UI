@@ -22,7 +22,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import es.dmoral.toasty.Toasty;
 import sharma.pankaj.grocerystore.R;
-import sharma.pankaj.grocerystore.ui.HomeActivity;
+import sharma.pankaj.grocerystore.HomeActivity;
 
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
 

@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/colorWhite"
     android:orientation="vertical"
-    tools:context=".ui.product.ProductDescriptionFragment">
+    tools:context=".product.ProductDescriptionFragment">
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

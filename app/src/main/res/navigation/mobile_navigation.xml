@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="sharma.pankaj.grocerystore.ui.home.HomeFragment"
+        android:name="sharma.pankaj.grocerystore.home.HomeFragment"
         android:label="@string/app_name"
         tools:layout="@layout/fragment_home" >
         <action
@@ -20,7 +20,7 @@
 
     <fragment
         android:id="@+id/nav_my_cart"
-        android:name="sharma.pankaj.grocerystore.ui.mycart.MyCartFragment"
+        android:name="sharma.pankaj.grocerystore.mycart.MyCartFragment"
         android:label="@string/my_cart"
         tools:layout="@layout/fragment_my_cart" >
         <action
@@ -33,51 +33,51 @@
 
     <fragment
         android:id="@+id/nav_my_orders"
-        android:name="sharma.pankaj.grocerystore.ui.myorders.MyOrdersFragment"
+        android:name="sharma.pankaj.grocerystore.myorders.MyOrdersFragment"
         android:label="@string/my_orders"
         tools:layout="@layout/fragment_my_orders" />
 
     <fragment
         android:id="@+id/nav_favorite"
-        android:name="sharma.pankaj.grocerystore.ui.favorite.FavoriteFragment"
+        android:name="sharma.pankaj.grocerystore.favorite.FavoriteFragment"
         android:label="@string/favorite"
         tools:layout="@layout/fragment_favorite" />
     <fragment
         android:id="@+id/nav_chat"
-        android:name="sharma.pankaj.grocerystore.ui.chat.ChatFragment"
+        android:name="sharma.pankaj.grocerystore.chat.ChatFragment"
         android:label="@string/chats"
         tools:layout="@layout/fragment_chat" />
     <fragment
         android:id="@+id/nav_profile"
-        android:name="sharma.pankaj.grocerystore.ui.profile.ProfileFragment"
+        android:name="sharma.pankaj.grocerystore.profile.ProfileFragment"
         android:label="@string/profile"
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/nav_about"
-        android:name="sharma.pankaj.grocerystore.ui.about.AboutUsFragment"
+        android:name="sharma.pankaj.grocerystore.about.AboutUsFragment"
         android:label="@string/about_us"
         tools:layout="@layout/fragment_about_us" />
     <fragment
         android:id="@+id/nav_product_decription"
-        android:name="sharma.pankaj.grocerystore.ui.product.ProductDescriptionFragment"
+        android:name="sharma.pankaj.grocerystore.product.ProductDescriptionFragment"
         android:label="Description"
         tools:layout="@layout/fragment_product_description" />
 
     <fragment
         android:id="@+id/nav_order_review"
-        android:name="sharma.pankaj.grocerystore.ui.mycart.OrderReviewFragment"
+        android:name="sharma.pankaj.grocerystore.mycart.OrderReviewFragment"
         android:label="Order Review"
         tools:layout="@layout/fragment_order_review" />
 
     <fragment
         android:id="@+id/nav_product_category"
-        android:name="sharma.pankaj.grocerystore.ui.product.ProductCategoryFragment"
+        android:name="sharma.pankaj.grocerystore.product.ProductCategoryFragment"
         android:label="Product Category"
         tools:layout="@layout/fragment_product_category" />
 
     <fragment
         android:id="@+id/nav_order_details"
-        android:name="sharma.pankaj.grocerystore.ui.myorders.OrderDetailsFragment"
+        android:name="sharma.pankaj.grocerystore.myorders.OrderDetailsFragment"
         android:label="Order Details"
         tools:layout="@layout/fragment_order_details" />
 

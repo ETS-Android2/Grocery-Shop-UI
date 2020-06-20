@@ -1,33 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_margin="10dp"
     android:background="@color/colorWhite"
     android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:orientation="vertical">
 
-        <TextView
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
-            android:text="@string/order_summery"
-            android:textColor="@color/colorGreenDark"
-            android:textSize="23sp"
-            android:textStyle="bold" />
+            android:layout_marginBottom="16dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/order_summery"
+                android:layout_centerInParent="true"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/details"
+                android:textColor="@color/colorGreenDark"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:id="@+id/details"
+                android:layout_marginEnd="10dp"
+                android:text="Details"/>
+        </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginStart="10dp"
-            android:gravity="center"
-            android:layout_marginEnd="10dp">
+            android:layout_height="30dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:gravity="center">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -40,7 +61,8 @@
                 android:layout_height="30dp"
                 android:layout_alignParentEnd="true"
                 android:id="@+id/copy_order_id"
-                android:src="@drawable/ic_baseline_file_copy_24"/>
+                android:src="@drawable/ic_baseline_file_copy_24"
+                android:contentDescription="TODO" />
 
         </RelativeLayout>
 
@@ -116,12 +138,7 @@
                 android:layout_weight="1"/>
         </LinearLayout>
     </LinearLayout>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp">
-        <LinearLayout
+    <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp"
@@ -143,7 +160,8 @@
                     android:layout_alignParentStart="true"
                     android:src="@drawable/ic_check_circle_24"
                     android:id="@+id/circle_indicator3"
-                    android:layout_centerInParent="true"/>
+                    android:layout_centerInParent="true"
+                    android:contentDescription="TODO" />
                 <View
                     android:layout_width="1dp"
                     android:layout_height="match_parent"
@@ -164,11 +182,11 @@
                         android:layout_height="wrap_content"
                         android:textSize="23sp"
                         android:textColor="@color/colorPrimaryDark"
-                        android:text="Order Proceed"/>
+                        android:text="Order Confirmed"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="We are prepare your order"/>
+                        android:text="10 May 2020 at 12:40 PM"/>
                 </LinearLayout>
             </RelativeLayout>
             <RelativeLayout
@@ -187,7 +205,8 @@
                     android:layout_alignParentStart="true"
                     android:src="@drawable/ic_check_circle_24"
                     android:id="@+id/circle_indicator"
-                    android:layout_centerInParent="true"/>
+                    android:layout_centerInParent="true"
+                    android:contentDescription="TODO" />
                 <View
                     android:layout_width="1dp"
                     android:layout_height="match_parent"
@@ -208,11 +227,11 @@
                         android:layout_height="wrap_content"
                         android:textSize="23sp"
                         android:textColor="@color/colorPrimaryDark"
-                        android:text="Order Proceed"/>
+                        android:text="Out for delivery"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="We are prepare your order"/>
+                        android:text="11 May 2020 at 4:20 AM"/>
                 </LinearLayout>
             </RelativeLayout>
             <RelativeLayout
@@ -229,7 +248,7 @@
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_alignParentStart="true"
-                    android:src="@drawable/ic_check_circle_24"
+                    android:src="@drawable/ic_circle_green"
                     android:id="@+id/circle_indicator2"
                     android:layout_centerInParent="true"/>
                 <View
@@ -253,14 +272,14 @@
                         android:layout_height="wrap_content"
                         android:textSize="23sp"
                         android:textColor="@color/colorPrimaryDark"
-                        android:text="Order Proceed"/>
+                        android:text="Order Delivered"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="We are prepare your order"/>
+                        android:text=""/>
                 </LinearLayout>
             </RelativeLayout>
         </LinearLayout>
-    </androidx.cardview.widget.CardView>
+    </LinearLayout>
 
-</LinearLayout>
+</androidx.cardview.widget.CardView>

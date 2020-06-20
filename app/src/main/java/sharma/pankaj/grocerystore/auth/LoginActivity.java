@@ -3,13 +3,11 @@ package sharma.pankaj.grocerystore.auth;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.method.PasswordTransformationMethod;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -20,12 +18,11 @@ import com.google.android.material.textview.MaterialTextView;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import butterknife.BindAnim;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import es.dmoral.toasty.Toasty;
 import sharma.pankaj.grocerystore.R;
-import sharma.pankaj.grocerystore.ui.HomeActivity;
+import sharma.pankaj.grocerystore.HomeActivity;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
