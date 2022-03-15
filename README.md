@@ -1,5 +1,14 @@
 # Grocery-Shop-UI
 Simple Android UI for Grocery Application
-<video controls width="250">
-    <source src="https://raw.githubusercontent.com/pankaj046/Grocery-Shop-UI/master/grocery.mp4?token=GHSAT0AAAAAABRGV24ATGL472UMZTLAVD5KYRZV6IA">
-</video>
+<table>
+  <tr><td><img src="https://raw.githubusercontent.com/pankaj046/Grocery-Shop-UI/master/1.jpg" width="240", height="380"></td>
+      <td><img src="https://raw.githubusercontent.com/pankaj046/Grocery-Shop-UI/master/2.jpg" width="240", height="380"></td>
+      <td><img src="https://raw.githubusercontent.com/pankaj046/Grocery-Shop-UI/master/3.jpg" width="240", height="380"></td>
+      <td><img src="https://raw.githubusercontent.com/pankaj046/Grocery-Shop-UI/master/4.jpg" width="240", height="380"></td>
+    <td>
+        <video controls width="250">  <source src="https://raw.githubusercontent.com/pankaj046/Grocery-Shop-UI/master/grocery.mp4?token=GHSAT0AAAAAABRGV24ATGL472UMZTLAVD5KYRZV6IA"></video></td>
+  </tr>
+  </table>
+
+  
+
